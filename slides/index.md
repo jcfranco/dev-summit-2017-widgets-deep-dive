@@ -9,6 +9,22 @@
 
 # Agenda
 
+- History
+- Accessor
+- TypeScript
+- Lifecycle
+- Porting
+- Tools
+- Resources
+- Q & A
+
+---
+
+# History
+
+- Dijit
+- Why we changed
+
 ---
 
 # Accessor
@@ -17,34 +33,63 @@
 
 # TypeScript
 
+- Leverage ES6 (syntactic sugar)
+- Interfaces
+- Typing
+- const and let vs var
+- remove binding for () => {}
+
 ---
 
 # Internal development lifecycle
 
 ---
 
-# Creating/Porting
+# Porting
 
 ---
 
-# Real Nodes
+# Porting: Real Nodes
 
 ---
 
 
-# JSX
+# Porting: JSX
+
+- focussing nodes
+  - storing reference to them
+- Using JSX to hide nodes
+  - toggling classes
+  - joining classes
+  - using es6 templates
+  - JSX key attribute
+  - accessibleHandler
+  - JSX storing data on attributes
 
 ---
 
-# ViewModels
+# Porting: ViewModels
+
+- Rethinking APIs
+  - More collections
+  - More Accessors
+  - View properties instead of events
+  - readonly properties
+- Support modules
+  - Offloading logic where appropriate. More modular
+- Autocasting
 
 ---
 
-# Styling
+# Porting: Styling
 
 ---
 
 # Tools
+
+- IDEs
+- NPM
+- Grunt
 
 ---
 
