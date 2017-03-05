@@ -1,0 +1,24 @@
+Deep Dive on How the ArcGIS API for JavaScript Directions and Layerlist Widgets Were Built
+Primrose A
+
+We'll put on our scuba gear and jump into how widgets are written for the ArcGIS API for JavaScript. You'll discover the details behind how we develop widgets for the 4.x API using TypeScript, Sass, and Node. Brace yourself for the world of widget development.
+
+Categories - Web, Intermediate, Esri Technical Session
+
+kind of like a behind the scenes for widgets
+
+- development lifecycle
+- tools we use
+  - IDE
+  - Testing tools
+- typescript definition files
+- es6 code writing
+- interfaces in typescript
+- challenges
+- creating
+- porting
+- Styling/theming
+- testing
+- automating
+- node tasks
+- problems faced with JSX
