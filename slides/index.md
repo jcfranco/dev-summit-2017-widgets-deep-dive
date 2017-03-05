@@ -22,12 +22,15 @@
 
 # History
 
-- Dijit
+- Dijit to now
 - Why we changed
+- What we gain
 
 ---
 
 # Accessor
+
+TBD
 
 ---
 
@@ -43,9 +46,13 @@
 
 # Internal development lifecycle
 
+TBD? JC?
+
 ---
 
 # Porting
+
+Go through all the things we do to port a widget to 4x
 
 ---
 
@@ -83,12 +90,38 @@
 
 # Porting: Styling
 
+- CSS to Sass
+  - Variables
+  - Theming
+  - Mixins
+  - etc.
+- BEM
+- Icon font / SVG
+- Organized class names, CSS object
+
 ---
 
 # Tools
 
 - IDEs
 - NPM
+- Grunt
+
+---
+
+# Tools: IDEs
+
+---
+
+# Tools: Node
+
+- Node
+- NPM
+
+---
+
+# Tools: Tasks
+
 - Grunt
 
 ---
