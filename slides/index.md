@@ -57,7 +57,7 @@
 
 # Use the source luke
 
-[GitHub Code](https://github.com/ArcGIS/presentations-devsummit-2017)
+[GitHub Code](https://github.com/jcfranco/dev-summit-2017-widgets-deep-dive)
 
 ---
 
