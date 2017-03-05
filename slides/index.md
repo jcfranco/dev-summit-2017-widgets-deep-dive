@@ -52,7 +52,9 @@ TBD? JC?
 
 # Porting
 
-Go through all the things we do to port a widget to 4x
+Go through all the things we do to port a widget to 4x.
+
+Let's go deep!
 
 ---
 
