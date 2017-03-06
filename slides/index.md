@@ -26,7 +26,7 @@
 - Why we changed
 - What we gain
 
-<img src="images/history.gif" width="300">
+<img src="images/dos.gif" width="300">
 
 ---
 
