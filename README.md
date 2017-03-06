@@ -1,6 +1,6 @@
 # Deep Dive on How ArcGIS API for JavaScript Widgets Were Built
 
-[Preview presentation](slides/)
+[Preview presentation](https://jcfranco.github.io/dev-summit-2017-widgets-deep-dive/slides/#/)
 
 To be presented at [Esri Developer Summit 2017](http://www.esri.com/events/devsummit).
 
