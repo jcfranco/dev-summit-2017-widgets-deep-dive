@@ -115,6 +115,9 @@ Let's go deep!
 
 # Tools: IDEs
 
+- Visual Studio Code
+- WebStorm
+
 ---
 
 # Tools: Node
