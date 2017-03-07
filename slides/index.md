@@ -67,7 +67,7 @@ Let's go deep!
 
 # Porting: JSX
 
-- focussing nodes
+- focusing nodes
   - storing reference to them
 - Using JSX to hide nodes
   - toggling classes
