@@ -136,7 +136,7 @@ Let's go deep!
 ## Additional Resources
 
 - [JavaScript Sessions at DevSummit](https://devsummit.schedule.esri.com/#search/sessions/q:javascript)
-- [Documentation - 4.0 beta](https://developers.arcgis.com/javascript/beta/)
+- [Documentation - 4.3](https://developers.arcgis.com/javascript/)
 
 ---
 
