@@ -52,11 +52,34 @@ TBD? JC?
 
 ---
 
+# Before porting
+
+- rethink APIs
+- restrucuring
+- porting locate/track
+- porting search
+- portiong home
+
+---
+
+# Tasks
+
+- installing npm/grunt
+- compile ts/sass
+
+---
+
 # Porting
 
 Go through all the things we do to port a widget to 4x.
 
 Let's go deep!
+
+---
+
+# API consistency
+
+- things to consider for collections/accessor
 
 ---
 
@@ -142,7 +165,7 @@ Let's go deep!
 
 # Use the source luke
 
-[GitHub Code](https://github.com/jcfranco/dev-summit-2017-widgets-deep-dive)
+[GitHub Code](http://esriurl.com/deepdive)
 
 ---
 
