@@ -30,9 +30,10 @@
 
 ---
 
-# Accessor
+# Prereqs
 
-TBD
+- Accessor
+- TypeScript
 
 ---
 
@@ -99,6 +100,12 @@ Let's go deep!
   - JSX key attribute
   - accessibleHandler
   - JSX storing data on attributes
+
+---
+
+todo: matt - jsx demo with basic widget.
+
+todo: matt - cover BEM and CSS object.
 
 ---
 
