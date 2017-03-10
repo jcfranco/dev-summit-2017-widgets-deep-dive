@@ -165,10 +165,11 @@ How do we go about developing widgets?
 
 # Development challenges: API Design
 
-- How things can be done differently in 4x compared to 3
+How things can be done differently in 4x compared to 3
+
+- New tools
   - Collection
   - Accessor
-  
 
 ---
 
@@ -180,8 +181,6 @@ How do we go about developing widgets?
 ---
 
 # Development challenges: JSX
-
-todo: matt
 
 - Using JSX to hide nodes
 - toggling classes
@@ -216,8 +215,6 @@ todo: matt
 - BEM
 - Icon font / SVG
 - Organized class names, CSS object
-
-todo: matt - cover BEM and CSS object.
 
 ---
 
