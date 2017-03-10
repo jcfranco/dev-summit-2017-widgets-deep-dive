@@ -87,6 +87,8 @@ How do we go about developing widgets?
 - UI/UX improvements
 - etc.
 
+![tips](images/tips.gif)
+
 ---
 
 # Development lifecycle: API Design
@@ -109,25 +111,36 @@ todo matt
 
 # Development lifecycle: View
 
-todo matt
-
----
-
-# Development lifecycle: UI/UX Design
-
-todo matt
+- Research dom structure needed for widget
+- Layout containers needed
+- Using proper semantic tags for nodes
 
 ---
 
 # Development lifecycle: Styles
 
-todo matt
+- Classes needed
+- BEM naming of classes
+- 4x Widgets can use flexbox for layout
+- Sass mixins needed?
+
+---
+
+# Development lifecycle: UI/UX Design
+
+- Meeting with our creative lab
+- Discuss needs, API
+- Collaborate on design and tweak JSX as necessary
 
 ---
 
 # Development lifecycle: Tests
 
-todo matt
+- Make sure we have tests that hit all the API
+- Methods are tested with all options and return types
+- Properties behave as expected when modified
+- etc.
+- Screenshot tests
 
 ---
 
@@ -160,8 +173,6 @@ Let's go deep!
 - porting locate/track
 - porting search
 - portiong home
-
-![tips](images/tips.gif)
 
 ---
 
