@@ -597,6 +597,7 @@ Lookup referenced in JSX
 
 - IDEs
 - Tasks
+- Testing
 - Other
 
 ![Tasks](images/tools.gif)
@@ -620,6 +621,12 @@ Lookup referenced in JSX
 - Compile TS/Sass
 
 ![Tasks](images/tasks.gif)
+
+---
+
+# Testing
+
+[Intern](https://theintern.github.io/)
 
 ---
 
