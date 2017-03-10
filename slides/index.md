@@ -415,17 +415,11 @@ private _handleClickEvent(event: MouseEvent) {
 
 ---
 
-# Development tips: Real Nodes
-
-- Focusing nodes
-  - Markup in `render()` is virtual
-  - Need to store reference to actual node with `afterCreate` or `afterUpdate`
-
----
-
 # Development tips: `render()`
 
 - Real nodes
+  - Markup in `render()` is virtual
+  - Need to store reference to actual node with `afterCreate` or `afterUpdate`
 
 ```
 private _realNode: Element = null;
