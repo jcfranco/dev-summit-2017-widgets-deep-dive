@@ -72,15 +72,65 @@ How do we go about developing widgets?
 
 - Request/idea/port
 - API design
-  - Reviewed and approved
 - Kickoff UI/UX design
-  - Approval
 - Develop ViewModel
 - Develop View
 - Write tests
 - Pull request
-  - Pull request reviewed & approved
 - API merge!!!
+
+---
+
+# Development lifecycle: Idea
+
+- User request/enhancement
+- Port from 3x to 4x
+- New ArcGIS feature implementation
+- UI/UX improvements
+
+---
+
+# Development lifecycle: API Design
+
+todo matt
+
+---
+
+# Development lifecycle: ViewModel
+
+todo matt
+
+---
+
+# Development lifecycle: View
+
+todo matt
+
+---
+
+# Development lifecycle: UI/UX Design
+
+todo matt
+
+---
+
+# Development lifecycle: Styles
+
+todo matt
+
+---
+
+# Development lifecycle: Tests
+
+todo matt
+
+---
+
+# Development lifecycle: Pull Request
+
+- All the code changes done in a git branch
+- PR is opened with all changes and tests included
+- PR is reviewed and tested before merge
 
 ---
 
@@ -90,11 +140,7 @@ How do we go about developing widgets?
 
 ---
 
-todo: 
-
----
-
-# Widget API Design Tips
+# Development challenges: API Design
 
 todo: matt
 
@@ -104,42 +150,23 @@ Go through all the things we do to port a widget to 4x.
 
 Let's go deep!
 
-![tips](images/tips.gif)
-
----
-
 - rethink APIs
 - restrucuring
 - porting locate/track
 - porting search
 - portiong home
 
----
-
-# Our Tools
-
-![Tasks](images/tools.gif)
+![tips](images/tips.gif)
 
 ---
 
-# Tasks
-
-todo: jc? do we need this?
-
-- installing npm/grunt
-- compile ts/sass
-
-![Tasks](images/tasks.gif)
-
----
-
-# Porting: Real Nodes
+# Development challenges: Real Nodes
 
 todo: matt
 
 ---
 
-# Design Tips: JSX
+# Development challenges: JSX
 
 - focusing nodes
   - storing reference to them
@@ -153,7 +180,7 @@ todo: matt
 
 ---
 
-#  Design Tips: ViewModels
+#  Development challenges: ViewModels
 
 - Rethinking APIs
   - More collections
@@ -166,7 +193,7 @@ todo: matt
 
 ---
 
-#  Design Tips: Styling
+#  Development challenges: Styling
 
 - CSS to Sass
   - Variables
@@ -181,11 +208,13 @@ todo: matt - cover BEM and CSS object.
 
 ---
 
-# Tools
+# Our Tools
 
 - IDEs
 - NPM
 - Grunt
+
+![Tasks](images/tools.gif)
 
 ---
 
@@ -206,6 +235,10 @@ todo: matt - cover BEM and CSS object.
 # Tools: Tasks
 
 - Grunt
+- installing npm/grunt
+- compile ts/sass
+
+![Tasks](images/tasks.gif)
 
 ---
 
