@@ -24,6 +24,7 @@
 # Prereqs: Accessor
 
 - [Accessor SDK](https://developers.arcgis.com/javascript/latest/guide/implementing-accessor/index.html) `esri/core/Accessor`
+- [Building Classes Using Accessor and the ArcGIS API for JavaScript](https://devsummitps17.schedule.esri.com/session-catalog/234004588)
 
 ---
 
@@ -35,6 +36,7 @@
 - `const` and `let` vs `var`
 - `() => {}` vs `bind` or this-binding utility
 - [TypeScript Setup](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
+- [Using TypeScript with ArcGIS API for Javascript](https://devsummitps17.schedule.esri.com/session-catalog/685861044)
 
 ---
 
