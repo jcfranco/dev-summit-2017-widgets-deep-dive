@@ -100,7 +100,7 @@ How do we go about developing widgets?
 
 - friendly, consistent naming
 - public methods
-  - return types 
+  - return types
   - arguments
 - public properties
 
@@ -157,13 +157,13 @@ How do we go about developing widgets?
 
 ---
 
-# Development challenges
+# Development tips
 
 ![challenges](images/challenges.gif)
 
 ---
 
-# Development challenges: API Design
+# Development tips: API Design
 
 How things can be done differently in 4x compared to 3
 
@@ -173,26 +173,233 @@ How things can be done differently in 4x compared to 3
 
 ---
 
-# Development challenges: Real Nodes
+# Development tips: JSX
 
-- focusing nodes
-  - storing reference to them
+- Hiding nodes
+
+```
+render() {
+  const childNode = this.childVisible? <div>child</div> : null;
+
+  return (
+    <div>{childNode}</div>
+  );
+}
+```
 
 ---
 
-# Development challenges: JSX
+# Development tips: JSX
 
-- Using JSX to hide nodes
-- toggling classes
-- joining classes
-- using es6 templates
-- JSX key attribute
-- accessibleHandler
+- Reusing classes
+
+```
+const CSS = {
+  root: "example",
+  part: "example__part",
+  disabled: "example--disabled"
+};
+```
+
+---
+
+# Development tips: JSX
+
+- Toggling classes
+
+```
+render() {
+  const dynamicClasses = {
+    [CSS.disabled]: this.isDisabled
+  };
+
+  return (
+    <div classes={dynamicClasses}>...</div>
+  );
+}
+```
+
+---
+
+# Development tips: JSX
+
+- `class` cannot change between renders
+
+```
+render() {
+  const rootClass = someCondition ? CSS.foo : CSS.bar;
+
+  // throws error - cannot change class
+  return (
+    <div class={rootClass}>...</div>
+  );
+}
+```
+
+---
+
+# Development tips: JSX
+
+- Use `join` to apply multiple classes
+
+```
+render() {
+  return (
+    <div class={join(CSS.root, CSS.button, CSS.shadow)}>...</div>
+  );
+}
+```
+
+---
+
+# Development tips: JSX
+
+- String templates!
+
+```
+render() {
+  return (
+    <div class={CSS.root}>`Hello, ${this.person.name}!`</div>
+  );
+}
+```
+
+---
+
+# Development tips: JSX
+
+- Distinguishable children
+
+```
+render() {
+
+  // children are NOT dynamically added/removed, `key` is NOT necessary
+  return (
+    <div>
+      <span>first</span>
+      <span>second</span>
+      <span>third</span>
+    </div>
+  );
+}
+```
+
+---
+
+# Development tips: JSX
+
+- Distinguishable children
+
+```
+render() {
+  const first = this.showFirst? <span key="first">first</span> : null;
+  const second = this.showSecond? <span key="second">second</span> : null;
+  const third = this.showThird? <span key="third">third</span> : null;
+
+  // children are dynamically added/removed, `key` IS necessary
+  return (
+    <div>
+      {first}
+      {second}
+      {third}
+    </div>
+  );
+}
+```
+
+**Note**: `key` can be a string, number or object
+
+---
+
+# Development tips: JSX
+
 - JSX storing data on attributes
 
+```
+render() {
+  return (
+    <div onclick={this._handleClick}
+         data-lucky-numbers={luckyNumbers()}>
+      Click for your lucky numbers!
+    </div>
+  );
+}
+
+private _handleClick(event: MouseEvent) {
+  const node = event.currentTarget as Element;
+  const luckyNums = node.getAttribute("data-lucky-numbers");
+  console.log(`Today's lucky numbers are: ${luckyNums}`);
+}
+```
+
 ---
 
-#  Development challenges: ViewModels
+# Development tips: JSX
+
+- Binding
+
+```
+render() {
+  return (
+    <div class={CSS.base}>
+      <div onclick={this._logThis}>this === node</div>
+
+      <div bind={this}
+           onclick={this._logThis}>this === widget</div>
+    </div>
+  );
+}
+```
+
+---
+
+# Development tips: Real Nodes
+
+- Focusing nodes
+  - Markup in `render` is virtual
+  - Need to store reference to actual node with `afterCreate` or `afterUpdate`
+
+---
+
+# Development tips: Real Nodes
+
+```
+private _realNode: Element = null;
+
+private _storeThisNode(node: Element): void {
+  this._realNode = node;
+}
+
+render() {
+  return (
+    <div afterCreate={this._storeThisNode}>...</div>;
+  )
+}
+```
+
+---
+
+# Development tips: JSX
+
+- accessibleHandler
+
+```
+render() {
+  return (
+    <div onclick={this._doSomething}
+         onkeydown={this._doSomething} />
+  );
+}
+
+@accessibleHandler()
+private _doSomething(): void {
+  // ...
+}
+```
+
+---
+
+#  Development tips: ViewModels
 
 - Rethinking APIs
   - More collections
@@ -205,7 +412,7 @@ How things can be done differently in 4x compared to 3
 
 ---
 
-# Development challenges: Styling
+# Development tips: Styling
 
 - CSS to Sass
   - Variables
@@ -290,7 +497,7 @@ Object referenced in JSX
 # Our Tools
 
 - IDEs
-- NPM
+- Node/NPM
 - Grunt
 - Other
 
@@ -303,13 +510,6 @@ Object referenced in JSX
 - Visual Studio Code
   - Plugins :D
 - WebStorm
-
----
-
-# Tools: Node
-
-- Node
-- NPM
 
 ---
 
