@@ -25,7 +25,7 @@
 
 # Prereqs: Accessor
 
-- [Accessor SDK](https://developers.arcgis.com/javascript/latest/guide/implementing-accessor/index.html) ('esri/core/Accessor`)
+- [Accessor SDK](https://developers.arcgis.com/javascript/latest/guide/implementing-accessor/index.html) `esri/core/Accessor`
 
 ---
 
@@ -34,8 +34,8 @@
 - Leverage ES6 (syntactic sugar)
 - Interfaces
 - Typing
-- const and let vs var
-- remove binding for () => {}
+- `const` and `let` vs `var`
+- remove binding for `() => {}`
 - [TypeScript Setup](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
 
 ---
@@ -57,8 +57,6 @@
 - Responsive
 - Redesigned API
 - consistent with core API
-
-![history](images/dos.gif)
 
 ---
 
@@ -92,6 +90,10 @@ How do we go about developing widgets?
 
 ---
 
+todo: 
+
+---
+
 # Widget API Design Tips
 
 todo: matt
@@ -116,6 +118,8 @@ Let's go deep!
 
 # Our Tools
 
+![Tasks](images/tools.gif)
+
 ---
 
 # Tasks
@@ -124,6 +128,8 @@ todo: jc? do we need this?
 
 - installing npm/grunt
 - compile ts/sass
+
+![Tasks](images/tasks.gif)
 
 ---
 
@@ -223,7 +229,7 @@ todo: matt - cover BEM and CSS object.
 3. Scroll down to the "Feedback" section
 4. Complete Answers, add a Comment, and Select "Submit"
 
-<img src="images/submit-feedback.png" width="200">
+![Submit feedback](images/submit-feedback.png)
 
 ---
 
