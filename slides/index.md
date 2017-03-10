@@ -178,21 +178,22 @@ Let's go deep!
 
 # Development challenges: Real Nodes
 
-todo: matt
+- focusing nodes
+  - storing reference to them
 
 ---
 
 # Development challenges: JSX
 
-- focusing nodes
-  - storing reference to them
+todo: matt
+
 - Using JSX to hide nodes
-  - toggling classes
-  - joining classes
-  - using es6 templates
-  - JSX key attribute
-  - accessibleHandler
-  - JSX storing data on attributes
+- toggling classes
+- joining classes
+- using es6 templates
+- JSX key attribute
+- accessibleHandler
+- JSX storing data on attributes
 
 ---
 
