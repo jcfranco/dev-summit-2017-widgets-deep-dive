@@ -85,12 +85,19 @@ How do we go about developing widgets?
 - Port from 3x to 4x
 - New ArcGIS feature implementation
 - UI/UX improvements
+- etc.
 
 ---
 
 # Development lifecycle: API Design
 
-todo matt
+- Widget developer defines API
+  - View & ViewModel
+    - Properties
+    - Methods
+    - Events
+- API reviewed and tweaked
+- JS doc written and approved
 
 ---
 
