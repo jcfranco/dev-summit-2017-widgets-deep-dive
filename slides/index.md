@@ -131,12 +131,15 @@ How do we go about developing widgets?
 - Meeting with our creative lab
 - Discuss needs, API
 - Collaborate on design and tweak JSX as necessary
+- Receive mockup/wireframes/assets/Sass
+- implement design
 
 ---
 
 # Development lifecycle: Tests
 
 - Make sure we have tests that hit all the API
+- Unit, integration, functional tests
 - Methods are tested with all options and return types
 - Properties behave as expected when modified
 - etc.
@@ -148,7 +151,9 @@ How do we go about developing widgets?
 
 - All the code changes done in a git branch
 - PR is opened with all changes and tests included
-- PR is reviewed and tested before merge
+- PR is reviewed and tested
+- API build is successful
+- Merge!
 
 ---
 
@@ -161,18 +166,6 @@ How do we go about developing widgets?
 # Development challenges: API Design
 
 todo: matt
-
-- things to consider for collections/accessor
-
-Go through all the things we do to port a widget to 4x.
-
-Let's go deep!
-
-- rethink APIs
-- restrucuring
-- porting locate/track
-- porting search
-- portiong home
 
 ---
 
