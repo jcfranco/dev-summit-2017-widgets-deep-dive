@@ -83,7 +83,7 @@ How do we go about developing widgets?
 # Development lifecycle: API Design
 
 - Widget developer writes objective for widget
-  - [Sample](pdf/popup-api.pdf)
+  - [Sample](https://github.com/jcfranco/dev-summit-2017-widgets-deep-dive/blob/master/demos/api-design-wiki.md)
 - Widget dev defines API in markdown
   - View & ViewModel
     - Properties
