@@ -626,7 +626,10 @@ Lookup referenced in JSX
 
 # Testing
 
-[Intern](https://theintern.github.io/)
+- [Intern](https://theintern.github.io/)
+- [Jasmine](https://jasmine.github.io/)
+- [QUnit](https://qunitjs.com/)
+- [Karma (test runner)](https://karma-runner.github.io/1.0/index.html)
 
 ---
 
