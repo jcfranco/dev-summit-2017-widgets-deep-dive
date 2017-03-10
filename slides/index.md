@@ -536,10 +536,10 @@ private _renderContent(): any {
 
 # Sass Install
 
-- [Installing Sass](http://sass-lang.com/install)
+- [Installing grunt-sass](https://github.com/sindresorhus/grunt-sass)
 
 ```
-sudo gem install sass
+$ npm install --save-dev grunt-sass
 ```
 
 ---
