@@ -205,16 +205,85 @@ How things can be done differently in 4x compared to 3
 
 ---
 
-#  Development challenges: Styling
+# Development challenges: Styling
 
 - CSS to Sass
   - Variables
   - Theming
   - Mixins
-  - etc.
-- BEM
-- Icon font / SVG
-- Organized class names, CSS object
+- [SDK Guide: Styles](https://developers.arcgis.com/javascript/latest/guide/styling/index.html)
+- [Sass](http://sass-lang.com/)
+- [BEM](http://getbem.com/)
+- [Icon font](https://developers.arcgis.com/javascript/latest/guide/esri-icon-font/index.html) / SVG
+
+---
+
+# Widget Theming: Sass
+
+- CSS preprocessor
+- Variables
+- `@mixin` (group statements)
+- `@include` - (use mixins)
+- `@import` - (split up files)
+- `@extend` - (inheritance)
+- More power!
+
+---
+
+# Sass Install
+
+- [Installing Sass](http://sass-lang.com/install)
+
+```
+sudo gem install sass
+```
+
+---
+
+# Widget BEM
+
+- [BEM](http://getbem.com/): Block Element Modifier
+- Methodology to create reusable components
+- Uses delimiters to separate block, element, modifiers
+- Provides semantics (albeit verbose)
+- Keeps specificity low
+- Scopes styles to blocks
+
+```css
+/* block */
+.example-widget {}
+
+/* block__element */
+.example-widget__input {}
+.example-widget__submit {}
+
+/* block--modifier */
+.example-widget--loading {}
+
+/* block__element--modifier */
+.example-widget__submit--disabled {}
+```
+
+---
+
+# Development challenges: Styling within View
+
+CSS Object
+
+```
+const CSS = {
+  base: "my-widget",
+  title: "my-widget__title"
+};
+```
+
+Object referenced in JSX
+
+```
+<div class={CSS.base}/>
+  <h1 class={CSS.title}>Hello world</h1>
+</div>
+```
 
 ---
 
