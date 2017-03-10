@@ -631,6 +631,8 @@ Lookup referenced in JSX
 - [QUnit](https://qunitjs.com/)
 - [Karma (test runner)](https://karma-runner.github.io/1.0/index.html)
 
+![Intern](images/intern.png)
+
 ---
 
 # Other tools
