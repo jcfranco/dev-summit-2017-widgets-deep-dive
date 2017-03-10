@@ -170,6 +170,10 @@ How things can be done differently in 4x compared to 3
 - New tools
   - Collection
   - Accessor
+- View properties instead of events
+  - readonly properties
+- Support modules
+  - Offloading logic where appropriate. More modular
 
 ---
 
