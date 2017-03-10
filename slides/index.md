@@ -15,8 +15,6 @@
 - How we got here
 - Our development lifecycle
 - Widget development challenges
-- Widget API Design considerations
-- Porting 3.x => 4.x tips
 - Tools we use
 - Resources
 - Q & A
