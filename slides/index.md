@@ -5,55 +5,94 @@
 ### Matt Driscoll – [@driskull](https://twitter.com/driskull)
 ### JC Franco – [@arfncode](https://twitter.com/arfncode)
 
+![Deep Dive](images/deepdive.gif)
+
 ---
 
 # Agenda
 
-- History
-- Accessor
-- TypeScript
-- Lifecycle
-- Porting
-- Tools
+- Prerequisites
+- How we got here
+- Our development lifecycle
+- Development challenges
+- Widget API Design Tips
+- Porting 3.x => 4.x tips
+- Tools we use
 - Resources
 - Q & A
 
 ---
 
-# History
-
-- Dijit to now
-- Why we changed
-- What we gain
-
-<img src="images/dos.gif" width="300">
-
----
-
 # Prereqs
 
-- Accessor
+- [Accessor](https://developers.arcgis.com/javascript/latest/guide/implementing-accessor/index.html) ('esri/core/Accessor`)
 - TypeScript
 
 ---
 
-# TypeScript
+# Prereqs: TypeScript
 
 - Leverage ES6 (syntactic sugar)
 - Interfaces
 - Typing
 - const and let vs var
 - remove binding for () => {}
+- [TypeScript Setup](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
 
 ---
 
-# Internal development lifecycle
+# How we got here
 
-TBD? JC?
+- Dijit to now
+  - 3.x: Dijit
+  - 4.x: Abstracted!
+- Why?
+    - todo: gains
+    - API Consistency
+
+<img src="images/dos.gif" width="300">
 
 ---
 
-# Before porting
+# Our development lifecycle
+
+How do we go about developing widgets?
+
+---
+
+# Development lifecycle
+
+- Request/idea/port
+- API design and approval
+- Kickoff UI/UX design
+- Develop ViewModel
+- Develop View
+- Write tests
+- Pull request
+- Pull request reviewed
+- API merge!!!
+
+---
+
+# Development challenges
+
+![challenges](images/challenges.gif)
+
+---
+
+# Widget API Design Tips
+
+todo: matt
+
+- things to consider for collections/accessor
+
+Go through all the things we do to port a widget to 4x.
+
+Let's go deep!
+
+![tips](images/tips.gif)
+
+---
 
 - rethink APIs
 - restrucuring
@@ -63,33 +102,26 @@ TBD? JC?
 
 ---
 
+# Our Tools
+
+---
+
 # Tasks
+
+todo: jc? do we need this?
 
 - installing npm/grunt
 - compile ts/sass
 
 ---
 
-# Porting
-
-Go through all the things we do to port a widget to 4x.
-
-Let's go deep!
-
----
-
-# API consistency
-
-- things to consider for collections/accessor
-
----
-
 # Porting: Real Nodes
 
+todo: matt
+
 ---
 
-
-# Porting: JSX
+# Design Tips: JSX
 
 - focusing nodes
   - storing reference to them
@@ -103,13 +135,7 @@ Let's go deep!
 
 ---
 
-todo: matt - jsx demo with basic widget.
-
-todo: matt - cover BEM and CSS object.
-
----
-
-# Porting: ViewModels
+#  Design Tips: ViewModels
 
 - Rethinking APIs
   - More collections
@@ -122,7 +148,7 @@ todo: matt - cover BEM and CSS object.
 
 ---
 
-# Porting: Styling
+#  Design Tips: Styling
 
 - CSS to Sass
   - Variables
@@ -132,6 +158,8 @@ todo: matt - cover BEM and CSS object.
 - BEM
 - Icon font / SVG
 - Organized class names, CSS object
+
+todo: matt - cover BEM and CSS object.
 
 ---
 
