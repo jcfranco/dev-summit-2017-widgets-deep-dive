@@ -51,6 +51,7 @@
 
 # Why?
 
+- Framework independent
 - Customizable themes
 - Responsive
 - Redesigned API
@@ -68,7 +69,6 @@ How do we go about developing widgets?
 
 # Development lifecycle
 
-- Request/idea/port
 - API design
 - Kickoff UI/UX design
 - Develop ViewModel
@@ -79,25 +79,18 @@ How do we go about developing widgets?
 
 ---
 
-# Development lifecycle: Idea
-
-- User request/enhancement
-- Port from 3x to 4x
-- New ArcGIS feature implementation
-- UI/UX improvements
-- etc.
-
-![idea](images/idea.gif)
-
----
-
 # Development lifecycle: API Design
 
-- Widget developer defines API
+- Widget developer writes objective for widget
+  - [Sample](pdf/popup-api.pdf)
+- Widget dev defines API in markdown
   - View & ViewModel
     - Properties
     - Methods
     - Events
+  - sample code snippets
+  - demos
+  - Q & A
 - API reviewed and tweaked
 - JS doc written and approved
 
@@ -105,7 +98,11 @@ How do we go about developing widgets?
 
 # Development lifecycle: ViewModel
 
-todo matt
+- friendly, consistent naming
+- public methods
+  - return types 
+  - arguments
+- public properties
 
 ---
 
@@ -114,6 +111,9 @@ todo matt
 - Research dom structure needed for widget
 - Layout containers needed
 - Using proper semantic tags for nodes
+- CSS object used in JSX
+- Accessible, Aria roles present if necessary
+- Properties, events, methods aliased as necessary
 
 ---
 
@@ -229,6 +229,7 @@ todo: matt - cover BEM and CSS object.
 - IDEs
 - NPM
 - Grunt
+- Other
 
 ![Tasks](images/tools.gif)
 
@@ -237,6 +238,7 @@ todo: matt - cover BEM and CSS object.
 # Tools: IDEs
 
 - Visual Studio Code
+  - Plugins :D
 - WebStorm
 
 ---
@@ -258,10 +260,25 @@ todo: matt - cover BEM and CSS object.
 
 ---
 
+# Other tools
+
+Besides an IDE and browser dev tools...
+
+- SourceTree
+- Terminal
+- GitHub Enterprise
+- Slack :D
+- A handful of browsers
+- Coffee
+
+---
+
 ## Additional Resources
 
 - [JavaScript Sessions at DevSummit](https://devsummit.schedule.esri.com/#search/sessions/q:javascript)
 - [Documentation - 4.3](https://developers.arcgis.com/javascript/)
+
+![idea](images/idea.gif)
 
 ---
 
