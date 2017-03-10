@@ -88,8 +88,8 @@ How do we go about developing widgets?
     - Properties
     - Methods
     - Events
-  - sample code snippets
-  - demos
+  - Sample code snippets
+  - Demos
   - Q & A
 - API reviewed and tweaked
 - JS doc written and approved
@@ -98,19 +98,19 @@ How do we go about developing widgets?
 
 # Development lifecycle: ViewModel
 
-- friendly, consistent naming
-- public methods
-  - return types
-  - arguments
-- public properties
+- Friendly, consistent naming
+- Public methods
+  - Return types
+  - Arguments
+- Public properties
 
 ---
 
 # Development lifecycle: View
 
-- Research dom structure needed for widget
-- Layout containers needed
-- Using proper semantic tags for nodes
+- Research DOM structure needed for widget
+  - Layout containers needed
+  - Using proper semantic tags for nodes
 - CSS lookup object used in `render()`
 - Accessible, Aria roles present if necessary
 - Properties, events, methods aliased as necessary
@@ -122,7 +122,6 @@ How do we go about developing widgets?
 - Classes needed
 - BEM naming of classes
 - 4x Widgets can use flexbox for layout
-- Sass mixins needed?
 
 ---
 
@@ -130,18 +129,18 @@ How do we go about developing widgets?
 
 - Meeting with our creative lab
 - Discuss needs, API
-- Collaborate on design and tweak JSX as necessary
+- Collaborate on design and tweak markup as necessary
 - Receive mockup/wireframes/assets/Sass
-- implement design
+- Implement design
 
 ---
 
 # Development lifecycle: Tests
 
 - Make sure we have tests that hit all the API
-- Unit, integration, functional tests
+- Unit, integration, functional, screenshot tests
 - Methods are tested with all options and return types
-- Properties behave as expected when modified
+- Assert properties behave as expected when modified
 - Screenshot tests
 
 ---
@@ -171,9 +170,9 @@ How things can be done differently in 4 compared to 3
   - Accessor
 - View properties instead of events
   - Read-only properties
-- Consider promises for async operations
+- Promises for async operations
 - Support modules
-  - Offloading logic where appropriate. More modular
+  - Offloading logic where appropriate. More modular.
 
 ---
 
@@ -499,7 +498,7 @@ private _renderContent(): any {
   - More collections
   - More Accessors
   - View properties instead of events
-  - readonly properties
+  - Read-only properties
 - Support modules
   - Offloading logic where appropriate. More modular
 - Autocasting
