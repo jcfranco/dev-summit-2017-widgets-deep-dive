@@ -142,7 +142,6 @@ How do we go about developing widgets?
 - Unit, integration, functional tests
 - Methods are tested with all options and return types
 - Properties behave as expected when modified
-- etc.
 - Screenshot tests
 
 ---
@@ -165,13 +164,14 @@ How do we go about developing widgets?
 
 # Development tips: API Design
 
-How things can be done differently in 4x compared to 3
+How things can be done differently in 4 compared to 3
 
-- New tools
+- Classes
   - Collection
   - Accessor
 - View properties instead of events
-  - readonly properties
+  - Read-only properties
+- Consider promises for async operations
 - Support modules
   - Offloading logic where appropriate. More modular
 
@@ -250,6 +250,42 @@ render() {
 render() {
   return (
     <div class={join(CSS.root, CSS.button, CSS.shadow)}>...</div>
+  );
+}
+```
+
+---
+
+# Development tips: JSX
+
+- Toggle styles (similar to `classes`)
+
+```
+render() {
+  const dynamicStyles = {
+    "x": getX(),
+    "y": getY()
+  };
+
+  return (
+    <div styles={dynamicStyles}>...</div>
+  );
+}
+```
+
+---
+
+# Development tips: JSX
+
+- Attributes are not removed between render calls
+
+```
+render() {
+  const tabIndex = this.focusable ? 0 : null;
+
+  // `tabIndex` attribute will get rendered when value is falsy
+  return (
+    <div tabIndex={tabIndex}>...</div>
   );
 }
 ```
@@ -352,6 +388,26 @@ render() {
 
 ---
 
+# Development tips: JSX
+
+- DOM events
+
+```
+render() {
+  return (
+    <div class={CSS.base}>
+      <img onclick={this._handleClickEvent} />
+    </div>
+  );
+}
+
+private _handleClickEvent(event: MouseEvent) {
+  // do something with event
+}
+```
+
+---
+
 # Development tips: Real Nodes
 
 - Focusing nodes
@@ -393,6 +449,22 @@ render() {
 @accessibleHandler()
 private _doSomething(): void {
   // ...
+}
+```
+
+---
+
+# Development tips: JSX
+
+- Close childless nodes for conciseness
+
+```
+render() {
+  return (
+    <div>
+      <div class={CSS.childless} />
+    </div>
+  );
 }
 ```
 
@@ -506,17 +578,19 @@ Object referenced in JSX
 
 # Tools: IDEs
 
-- Visual Studio Code
-  - Plugins :D
-- WebStorm
+- Multiple flavors
+  - Visual Studio Code
+  - WebStorm
+  - [and more...](https://www.typescriptlang.org/)
+- Plugins
 
 ---
 
 # Tools: Tasks
 
 - Grunt
-- installing npm/grunt
-- compile ts/sass
+- Installing npm/grunt
+- Compile TS/Sass
 
 ![Tasks](images/tasks.gif)
 
@@ -537,6 +611,7 @@ Besides an IDE and browser dev tools...
 
 ## Additional Resources
 
+- [4x widget snippets](https://github.com/jcfranco/4x-widget-snippets/)
 - [JavaScript Sessions at DevSummit](https://devsummit.schedule.esri.com/#search/sessions/q:javascript)
 - [Documentation - 4.3](https://developers.arcgis.com/javascript/)
 
