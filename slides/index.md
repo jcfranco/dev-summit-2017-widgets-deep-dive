@@ -165,7 +165,10 @@ How do we go about developing widgets?
 
 # Development challenges: API Design
 
-todo: matt
+- How things can be done differently in 4x compared to 3
+  - Collection
+  - Accessor
+  
 
 ---
 
