@@ -23,10 +23,9 @@
 
 ---
 
-# Prereqs
+# Prereqs: Accessor
 
-- [Accessor](https://developers.arcgis.com/javascript/latest/guide/implementing-accessor/index.html) ('esri/core/Accessor`)
-- TypeScript
+- [Accessor SDK](https://developers.arcgis.com/javascript/latest/guide/implementing-accessor/index.html) ('esri/core/Accessor`)
 
 ---
 
@@ -50,13 +49,15 @@
     - todo: gains
     - API Consistency
 
-<img src="images/dos.gif" width="300">
+![history](images/dos.gif)
 
 ---
 
 # Our development lifecycle
 
 How do we go about developing widgets?
+
+![lifecycle](images/lifecycle.gif)
 
 ---
 
