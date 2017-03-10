@@ -54,4 +54,4 @@ tsc
 
 ## Run app!
 
-![run it](../slides/images/run-it.gif)
+![run it](../../slides/images/run-it.gif)
