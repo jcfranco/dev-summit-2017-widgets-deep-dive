@@ -87,7 +87,7 @@ How do we go about developing widgets?
 - UI/UX improvements
 - etc.
 
-![tips](images/tips.gif)
+![idea](images/idea.gif)
 
 ---
 
@@ -269,6 +269,8 @@ todo: matt - cover BEM and CSS object.
 
 [GitHub Code](http://esriurl.com/deepdive)
 
+[![Source Code](images/code.png)](http://esriurl.com/deepdive)
+
 ---
 
 # Please Take Our Survey!
@@ -278,11 +280,13 @@ todo: matt - cover BEM and CSS object.
 3. Scroll down to the "Feedback" section
 4. Complete Answers, add a Comment, and Select "Submit"
 
-![Submit feedback](images/submit-feedback.png)
+<img src="images/rate.gif" width="400">
 
 ---
 
 # Questions?
+
+<img src="images/questions.gif" width="400">
 
 ---
 
