@@ -14,8 +14,8 @@
 - Prerequisites
 - How we got here
 - Our development lifecycle
-- Development challenges
-- Widget API Design Tips
+- Widget development challenges
+- Widget API Design considerations
 - Porting 3.x => 4.x tips
 - Tools we use
 - Resources
@@ -42,12 +42,21 @@
 
 # How we got here
 
-- Dijit to now
-  - 3.x: Dijit
-  - 4.x: Abstracted!
-- Why?
-    - todo: gains
-    - API Consistency
+- 3.x
+  - Dojo Dijit
+  - Dijit Themes
+- 4.x
+  - Abstracted & framework independent
+  - ViewModels
+
+---
+
+# Why?
+
+- Customizable themes
+- Responsive
+- Redesigned API
+- consistent with core API
 
 ![history](images/dos.gif)
 
@@ -64,13 +73,15 @@ How do we go about developing widgets?
 # Development lifecycle
 
 - Request/idea/port
-- API design and approval
+- API design
+  - Reviewed and approved
 - Kickoff UI/UX design
+  - Approval
 - Develop ViewModel
 - Develop View
 - Write tests
 - Pull request
-- Pull request reviewed
+  - Pull request reviewed & approved
 - API merge!!!
 
 ---
