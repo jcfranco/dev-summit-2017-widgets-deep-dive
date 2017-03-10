@@ -20,7 +20,13 @@ npm install --save-dev @types/arcgis-js-api
 
 **Pro-tip**: `npm install --save-dev typescript @types/arcgis-js-api`
 
-## Provide TypeScript compiler options
+## Initialize TypeScript options
+
+```
+tsc --init
+```
+
+## Copy TypeScript compiler options
 
 ```json
 {
