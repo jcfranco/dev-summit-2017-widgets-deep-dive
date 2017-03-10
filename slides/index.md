@@ -43,6 +43,7 @@
 - 3.x
   - Dojo Dijit
   - Dijit Themes
+  - Logic tied to UI
 - 4.x
   - Abstracted & framework independent
   - ViewModels
@@ -52,10 +53,10 @@
 # Why?
 
 - Framework independent
-- Customizable themes
-- Responsive
-- Redesigned API
-- Consistent with core API
+- Easily customizable themes
+- Responsive design
+- Redesigned Widget API
+  - Consistent with core API
 
 ---
 
