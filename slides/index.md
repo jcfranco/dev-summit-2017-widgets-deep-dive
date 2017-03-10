@@ -593,8 +593,7 @@ Lookup referenced in JSX
 # Our Tools
 
 - IDEs
-- Node/NPM
-- Grunt
+- Tasks
 - Other
 
 ![Tasks](images/tools.gif)
@@ -613,8 +612,8 @@ Lookup referenced in JSX
 
 # Tools: Tasks
 
-- Grunt
-- Installing npm/grunt
+- Node/npm
+- Installing Grunt
 - Compile TS/Sass
 
 ![Tasks](images/tasks.gif)
