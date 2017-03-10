@@ -283,7 +283,7 @@ Besides an IDE and browser dev tools...
 
 ---
 
-# Use the source luke
+# Find this on GitHub
 
 [GitHub Code](http://esriurl.com/deepdive)
 
