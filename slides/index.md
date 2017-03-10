@@ -104,6 +104,7 @@ How do we go about developing widgets?
   - Return types
   - Arguments
 - Public properties
+- Make sure no view/UI logic
 
 ---
 
@@ -115,6 +116,7 @@ How do we go about developing widgets?
 - CSS lookup object used in `render()`
 - Accessible, Aria roles present if necessary
 - Properties, events, methods aliased as necessary
+- Make sure no API logic
 
 ---
 
