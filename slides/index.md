@@ -14,7 +14,7 @@
 - Prerequisites
 - How we got here
 - Our development lifecycle
-- Widget development challenges
+- Widget development tips
 - Tools we use
 - Resources
 - Q & A
@@ -277,12 +277,11 @@ render() {
 ```
 render() {
 
-  // children are NOT dynamically added/removed, `key` is NOT necessary
+  // children are NOT dynamically added/removed, `key` is NOT needed
   return (
     <div>
-      <span>first</span>
-      <span>second</span>
-      <span>third</span>
+      <div>foo</div>
+      <div>bar</div>
     </div>
   );
 }
@@ -296,16 +295,14 @@ render() {
 
 ```
 render() {
-  const first = this.showFirst? <span key="first">first</span> : null;
-  const second = this.showSecond? <span key="second">second</span> : null;
-  const third = this.showThird? <span key="third">third</span> : null;
+  const foo = this.showFoo? <div key="foo">foo</div> : null;
+  const bar = this.showBar? <div key="bar">bar</div> : null;
 
-  // children are dynamically added/removed, `key` IS necessary
+  // children are dynamically added/removed, `key` IS needed
   return (
     <div>
-      {first}
-      {second}
-      {third}
+      {foo}
+      {bar}
     </div>
   );
 }
@@ -323,9 +320,7 @@ render() {
 render() {
   return (
     <div onclick={this._handleClick}
-         data-lucky-numbers={luckyNumbers()}>
-      Click for your lucky numbers!
-    </div>
+         data-lucky-numbers={luckyNumbers()}>Lucky numbers!</div>
   );
 }
 
@@ -370,14 +365,14 @@ render() {
 ```
 private _realNode: Element = null;
 
-private _storeThisNode(node: Element): void {
-  this._realNode = node;
-}
-
 render() {
   return (
     <div afterCreate={this._storeThisNode}>...</div>;
   )
+}
+
+private _storeThisNode(node: Element): void {
+  this._realNode = node;
 }
 ```
 
@@ -477,7 +472,7 @@ sudo gem install sass
 
 ---
 
-# Development challenges: Styling within View
+# Development tips: Styling within View
 
 CSS Object
 
