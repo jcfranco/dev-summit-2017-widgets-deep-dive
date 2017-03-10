@@ -142,6 +142,7 @@ How do we go about developing widgets?
 - Methods are tested with all options and return types
 - Assert properties behave as expected when modified
 - Screenshot tests
+- Test early
 
 ---
 
@@ -152,6 +153,8 @@ How do we go about developing widgets?
 - PR is reviewed and tested
 - API build is successful
 - Merge!
+
+![merge](images/merge.gif)
 
 ---
 
@@ -165,7 +168,7 @@ How do we go about developing widgets?
 
 How things can be done differently in 4 compared to 3
 
-- Classes
+- Leverage
   - Collection
   - Accessor
 - View properties instead of events
