@@ -33,7 +33,7 @@
 - Interfaces
 - Typing
 - `const` and `let` vs `var`
-- remove binding for `() => {}`
+- `() => {}` vs `bind` or this-binding utility
 - [TypeScript Setup](https://developers.arcgis.com/javascript/latest/guide/typescript-setup/index.html)
 
 ---
@@ -55,7 +55,7 @@
 - Customizable themes
 - Responsive
 - Redesigned API
-- consistent with core API
+- Consistent with core API
 
 ---
 
@@ -111,7 +111,7 @@ How do we go about developing widgets?
 - Research dom structure needed for widget
 - Layout containers needed
 - Using proper semantic tags for nodes
-- CSS object used in JSX
+- CSS lookup object used in `render()`
 - Accessible, Aria roles present if necessary
 - Properties, events, methods aliased as necessary
 
@@ -177,7 +177,7 @@ How things can be done differently in 4 compared to 3
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - Hiding nodes
 
@@ -193,7 +193,7 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - Reusing classes
 
@@ -207,7 +207,7 @@ const CSS = {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - Toggling classes
 
@@ -225,7 +225,7 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - `class` cannot change between renders
 
@@ -242,7 +242,7 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - Use `join` to apply multiple classes
 
@@ -256,7 +256,7 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - Toggle styles (similar to `classes`)
 
@@ -275,7 +275,7 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - Attributes are not removed between render calls
 
@@ -292,7 +292,7 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - String templates!
 
@@ -306,7 +306,7 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - Distinguishable children
 
@@ -325,7 +325,7 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - Distinguishable children
 
@@ -348,9 +348,9 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
-- JSX storing data on attributes
+- Storing data on attributes
 
 ```
 render() {
@@ -369,7 +369,7 @@ private _handleClick(event: MouseEvent) {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - Binding
 
@@ -388,7 +388,7 @@ render() {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - DOM events
 
@@ -411,12 +411,14 @@ private _handleClickEvent(event: MouseEvent) {
 # Development tips: Real Nodes
 
 - Focusing nodes
-  - Markup in `render` is virtual
+  - Markup in `render()` is virtual
   - Need to store reference to actual node with `afterCreate` or `afterUpdate`
 
 ---
 
-# Development tips: Real Nodes
+# Development tips: `render()`
+
+- Real nodes
 
 ```
 private _realNode: Element = null;
@@ -434,7 +436,7 @@ private _storeThisNode(node: Element): void {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
 - accessibleHandler
 
@@ -454,15 +456,36 @@ private _doSomething(): void {
 
 ---
 
-# Development tips: JSX
+# Development tips: `render()`
 
-- Close childless nodes for conciseness
+- Close childless node tags for conciseness
 
 ```
 render() {
   return (
     <div>
       <div class={CSS.childless} />
+    </div>
+  );
+}
+```
+
+---
+
+# Development tips: `render()`
+
+- Keep `render` manageable by extracting pieces as it grows
+
+```
+render() {
+  return <div>{this._renderContent()}</div>;
+}
+
+private _renderContent(): any {
+  return (
+    <div>
+      <h1>{this.title}</h1>
+      {this._renderItems()}
     </div>
   );
 }
@@ -546,7 +569,7 @@ sudo gem install sass
 
 # Development tips: Styling within View
 
-CSS Object
+CSS lookup object
 
 ```
 const CSS = {
@@ -555,7 +578,7 @@ const CSS = {
 };
 ```
 
-Object referenced in JSX
+Lookup referenced in JSX
 
 ```
 <div class={CSS.base}/>
